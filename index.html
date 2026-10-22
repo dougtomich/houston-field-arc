@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Houston Field Arc | Mobile Welding & Fabrication</title>
+  <meta name="description" content="Mobile welding and fabrication in Greater Houston. On-site repairs for industrial, commercial, and equipment work. Fast response.">
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #1a1d24;
+      --accent: #e85d04;
+      --text: #e8eaed;
+      --muted: #9aa0a6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem 1.5rem;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 0.4rem; }
+    header p { color: var(--muted); font-size: 1.1rem; }
+    .hero {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    .hero h2 { font-size: 1.6rem; margin-bottom: 0.8rem; }
+    .hero p { margin-bottom: 1.2rem; color: var(--muted); }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.9rem 1.8rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .btn:hover { opacity: 0.9; }
+    section { margin: 2.5rem 0; }
+    h3 { font-size: 1.4rem; margin-bottom: 1rem; }
+    ul { list-style: none; }
+    ul li {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #2a2e36;
+      color: var(--muted);
+    }
+    ul li strong { color: var(--text); }
+    .form-card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    form { display: grid; gap: 1rem; }
+    label { font-size: 0.9rem; color: var(--muted); }
+    input, textarea, select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #333;
+      border-radius: 6px;
+      background: #12141a;
+      color: var(--text);
+      font-size: 1rem;
+    }
+    textarea { min-height: 100px; resize: vertical; }
+    button[type="submit"] {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0.9rem;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 1.05rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Houston Field Arc</h1>
+      <p>Mobile Welding & Fabrication · Greater Houston</p>
+    </header>
+
+    <div class="hero">
+      <h2>On-site welding when downtime costs money</h2>
+      <p>Certified mobile welding for industrial, commercial, and equipment repairs across Greater Houston. We come to the job site.</p>
+      <a href="#quote" class="btn">Request a Quote</a>
+    </div>
+
+    <section>
+      <h3>What we handle</h3>
+      <ul>
+        <li><strong>Heavy equipment & machinery repair</strong> — cracked frames, buckets, booms, mounts, and field fixes.</li>
+        <li><strong>Structural & steel work</strong> — beams, supports, platforms, and reinforcement.</li>
+        <li><strong>Pipe & process welding</strong> — field repairs and tie-ins.</li>
+        <li><strong>Trailer, fleet & commercial equipment</strong> — frames, hitches, gates, and site metalwork.</li>
+        <li><strong>Emergency response</strong> — available for urgent job-site calls.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Why Houston Field Arc</h3>
+      <ul>
+        <li><strong>Mobile service</strong> — fully equipped rig comes to your location.</li>
+        <li><strong>Greater Houston coverage</strong> — industrial corridor, Baytown, Katy, North Houston, and surrounding areas.</li>
+        <li><strong>Straightforward quoting</strong> — send the job details and get a clear response.</li>
+        <li><strong>Focused on uptime</strong> — built for contractors and facility teams that need the work done on site.</li>
+      </ul>
+    </section>
+
+    <section id="quote" class="form-card">
+      <h3>Request a quote</h3>
+      <p style="color: var(--muted); margin-bottom: 1rem;">Tell us what needs welding and where. We’ll follow up quickly.</p>
+      <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="quote">
+        <p style="display:none;"><label>Don’t fill this out: <input name="bot-field"></label></p>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+          <label for="email">Email (optional)</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div>
+          <label for="location">Job site location / area</label>
+          <input type="text" id="location" name="location" placeholder="e.g. Baytown, Katy, North Houston" required>
+        </div>
+        <div>
+          <label for="service">Type of work</label>
+          <select id="service" name="service">
+            <option>Heavy equipment repair</option>
+            <option>Structural / steel</option>
+            <option>Pipe / process</option>
+            <option>Trailer or fleet</option>
+            <option>Emergency / urgent</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="details">Job details</label>
+          <textarea id="details" name="details" placeholder="What needs welding, photos available?, timeline" required></textarea>
+        </div>
+        <button type="submit">Send Quote Request</button>
+      </form>
+    </section>
+
+    <footer>
+      Houston Field Arc · Mobile Welding · Greater Houston<br>
+      On-site service for industrial and commercial work
+    </footer>
+  </div>
+</body>
+</html>
