@@ -10,19 +10,19 @@
   <meta property="og:description" content="The rig comes to the job. On-site welding for equipment, steel, pipe, and fleet work.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://houstonfieldarc.com/">
-  <meta property="og:image" content="https://houstonfieldarc.com/img/og.jpg">
+  <meta property="og:image" content="https://dougtomich.github.io/houston-field-arc/img/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#quote">Skip to quote form</a>
   <header class="wrap">
     <nav class="nav" id="nav">
-      <a class="brand" href="/">
+      <a class="brand" href="./">
         <svg viewBox="0 0 64 64" aria-hidden="true">
           <rect width="64" height="64" rx="12" fill="#14181c"/>
           <path d="M14 44c10-16 26-16 36 0" fill="none" stroke="#f15a24" stroke-width="6" stroke-linecap="round"/>
@@ -183,10 +183,11 @@
           <h2>Tell us what needs welding.</h2>
           <p class="section-lead">We follow up by phone and email. The more specific the job, the faster the answer.</p>
         </div>
-        <form name="quote" method="POST" action="/thanks" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="quote">
-          <input type="hidden" name="subject" value="Houston Field Arc quote — %{submissionId}">
-          <p class="hp"><label>Don’t fill this out: <input name="bot-field"></label></p>
+        <form name="quote" method="POST" action="https://formsubmit.co/doug.tomich@gmail.com" enctype="multipart/form-data">
+          <input type="hidden" name="_subject" value="Houston Field Arc quote request">
+          <input type="hidden" name="_next" value="https://dougtomich.github.io/houston-field-arc/thanks.html">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
           <div class="two">
             <label>Name
               <input type="text" name="name" autocomplete="name" required>

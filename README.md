@@ -23,4 +23,6 @@ The domain still shows Porkbun’s parking page until both of these are done.
    - `@` — ALIAS (Porkbun supports this) — `apex-loadbalancer.netlify.com`
 3. Wait for Netlify to issue the certificate. HTTPS can take a few minutes after DNS is correct.
 
-Quote form name is `quote`. Submissions land in Netlify Forms. Success page is `/thanks`.
+Quote requests go to doug.tomich@gmail.com through FormSubmit. The first real submission sends a confirmation email that has to be clicked once. Change the address in `index.html` (`formsubmit.co/...`) when the business has its own inbox.
+
+Netlify project `houston-field-arc` is out of credits, so new deploys there are skipped. The live copy is GitHub Pages until credits are available or the domain is pointed at Pages.
